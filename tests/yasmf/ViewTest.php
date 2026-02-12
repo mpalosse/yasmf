@@ -21,7 +21,10 @@ namespace yasmf;
 
 use PHPUnit\Framework\TestCase;
 use function PHPUnit\Framework\assertEquals;
+use PHPUnit\Framework\Attributes\CoversClass;
+use PHPUnit\Framework\Attributes\UsesClass;
 
+#[CoversClass(View::class)]
 class ViewTest extends TestCase
 {
 

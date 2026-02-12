@@ -21,10 +21,14 @@ namespace yasmf;
 
 use PDOException;
 use PHPUnit\Framework\TestCase;
+use PHPUnit\Framework\Attributes\CoversClass;
+use PHPUnit\Framework\Attributes\UsesClass;
+
 
 /**
  * Test class for DataSource
  */
+#[CoversClass(DataSource::class)]
 class DataSourceTest extends TestCase
 {
     /**
